@@ -1,0 +1,64 @@
+POST http://localhost:4000/data/auth/signup
+Content-Type: application/json
+
+{
+    "email": "peterstephen221000@gmail.com",
+    "name": "john doe",
+    "password": "fafdafae"
+}
+
+
+###
+POST http://localhost:4000/data/auth/login
+Content-Type: application/json
+
+{
+    "email": "peterstephen22000@gmail.com",
+    "password": "fafdafae"
+}
+
+
+###
+GET http://localhost:4000/data/me
+Authorization: Bearer {{token}}
+
+
+###
+POST http://localhost:4000/data/me/post
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "text": "my 4th text",
+    "balance": "my 6th text"
+}
+
+###
+PATCH  http://localhost:4000/data/me/patch
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "email": "queen@gmail.com"
+}
+
+
+###
+GET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
+
+
+###
+POST https://smartrecharge.ng/api/v2/others/get_services.php/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l
+
+
+###
+POST https://smartrecharge.ng/api/v2/others/get_sub_services.php/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&service_code=sme_data_share
+
+
+###
+POST https://smartrecharge.ng/api/v2/others/get_available_services.php/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&service_code=data_topup&sub_service_code=direct_data_airtel
+
+
+###
+GET http://localhost:4000/data/me/get
+Authorization: Bearer {{token}}
