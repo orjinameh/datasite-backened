@@ -24,11 +24,6 @@ const Post = new Schema({
         type: String,
         // required: true,
     },
-
-    text:{
-        type: String,
-        // required: true,
-    },
     plan:{
         type:String,
         // required: true,
