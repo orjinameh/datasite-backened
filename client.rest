@@ -44,7 +44,7 @@ Content-Type: application/json
 
 
 ###
-GET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
+0706955555xGET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
 
 
 ###
@@ -56,9 +56,12 @@ POST https://smartrecharge.ng/api/v2/others/get_sub_services.php/?api_key=0rp40z
 
 
 ###
-POST https://smartrecharge.ng/api/v2/others/get_available_services.php/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&service_code=data_topup&sub_service_code=direct_data_airtel
-
+POST https://smartrecharge.ng/api/v2/others/get_available_services.php/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&service_code=data_topup&sub_service_code=shared_data_airtel
 
 ###
-GET http://localhost:4000/data/me/get
+POST https://smartrecharge.ng/api/v2/datashare/?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&product_code=data_share_airtel_500mb_30days&phone=09046429626
+
+###
+tv
+tvGET http://localhost:4000/data/me/get
 Authorization: Bearer {{token}}
