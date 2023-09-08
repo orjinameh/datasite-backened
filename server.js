@@ -17,7 +17,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors({
     origin: 'https://data-site-frontend.vercel.app'
-    // origin: 'http://localhost:5173' 
+    // origin: 'http://localhost:5173'
   }));
 app.use((req,res,next)=>{
     console.log(req.path, req.method);
