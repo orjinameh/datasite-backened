@@ -44,7 +44,7 @@ Content-Type: application/json
 
 
 ###
-0706955555xGET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
+GET http://smartrecharge.ng/api/v1/http.php?api_key=0rp40z0w4srflnkf97hnav6nlqv9p31kwv86s9l&balance=true
 
 
 ###
