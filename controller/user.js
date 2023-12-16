@@ -17,7 +17,7 @@ const registerUser = async (req,res) =>{
 
     const userExists = await User.findOne({email})
     if(userExists){
-        res.status(400).json({error:'user already exists'})
+        res.status(400).json({error:'user already exists!'})
     }
 
     const salt = await bcrypt.genSalt(10)
@@ -62,7 +62,7 @@ const loginUser = async (req,res) =>{
             token: generateToken(user._id)
         })
     } else {
-        res.status(400).json({error:'Invalid credentials'})
+        res.status(400).json({error:'Invalid credentials!'})
     }
 }
 
